@@ -1,6 +1,6 @@
 # IrysUp App — Frontend Application
 
-The web-based frontend for IrysUp, built with React and Tailwind CSS. This application enables creators and users to interact with the decentralized asset ecosystem — uploading, browsing, downloading, and storing creative content on the Irys DataChain.
+The web-based frontend for IrysUp, built with React. This application enables creators and users to interact with the decentralized asset ecosystem — uploading, browsing, downloading, and storing creative content on the Irys DataChain.
 
 ## Overview
 
@@ -17,7 +17,7 @@ The frontend communicates with the IrysUp backend via REST API and directly with
 ## Architecture
 
 - **Framework**: React 18+ (Vite)
-- **Styling**: Tailwind CSS
+- **Styling**: CSS
 - **State Management**: React Context + SWR for data fetching
 - **Blockchain Integration**: Irys SDK, ethers.js
 - **Authentication**: WalletConnect v2, EIP-191 signature verification
