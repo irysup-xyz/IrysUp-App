@@ -19,7 +19,7 @@ The frontend communicates with the IrysUp backend via REST API and directly with
 - **Framework**: React 18+ (Vite)
 - **Styling**: Tailwind CSS
 - **State Management**: React Context + SWR for data fetching
-- **Blockchain Integration**: Irys SDK (v1.x), ethers.js
+- **Blockchain Integration**: Irys SDK, ethers.js
 - **Authentication**: WalletConnect v2, EIP-191 signature verification
 - **Deployment**: Vercel (production), local development via Vite
 - **Browser Support**: Modern browsers (Chrome, Edge, Firefox, Safari)
