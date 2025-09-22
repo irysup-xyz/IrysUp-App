@@ -1,0 +1,22 @@
+.content-layout-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--irysup-spacing-xl) var(--irysup-spacing-lg);
+    gap: var(--irysup-spacing-xl);
+    font-family: var(--irysup-font-family);
+}
+
+.content-sidebar {
+    flex: 0 0 400px;
+    position: sticky;
+    top: var(--irysup-spacing-xl);
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.content-main-content {
+    flex: 1;
+    min-width: 0;
+}

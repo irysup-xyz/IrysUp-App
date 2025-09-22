@@ -1,0 +1,58 @@
+:root {
+  --irysup-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --irysup-font-size-xs: 0.75rem;
+  --irysup-font-size-sm: 0.875rem;
+  --irysup-font-size-base: 1rem;
+  --irysup-font-size-md: 1.125rem;
+  --irysup-font-size-lg: 1.25rem;
+  --irysup-font-size-xl: 1.5rem;
+  --irysup-font-size-2xl: 2rem;
+  --irysup-font-weight-light: 300;
+  --irysup-font-weight-normal: 400;
+  --irysup-font-weight-medium: 500;
+  --irysup-font-weight-semibold: 600;
+  --irysup-font-weight-bold: 700;
+
+  --irysup-color-bg: #fff;
+  --irysup-color-text: #111;
+  --irysup-color-text-secondary: #555;
+  --irysup-color-text-muted: #888;
+  --irysup-color-border: #ddd;
+  --irysup-color-primary: #000;
+  --irysup-color-primary-hover: #111;
+  --irysup-color-loading: #1976d2;
+  --irysup-color-danger: #dc3545;
+  --irysup-color-danger-hover: #b71c1c;
+  --irysup-color-gray-light: #f9f9f9;
+  --irysup-color-gray: #f0f0f0;
+  --irysup-color-gray-dark: #e0e0e0;
+  --irysup-color-nav-bg: #eee;
+
+  --irysup-spacing-xxs: 0.25rem;
+  --irysup-spacing-xs: 0.5rem;
+  --irysup-spacing-sm: 0.75rem;
+  --irysup-spacing-md: 1rem;
+  --irysup-spacing-lg: 1.5rem;
+  --irysup-spacing-xl: 2rem;
+  --irysup-spacing-2xl: 3rem;
+
+  --irysup-radius-xs: 4px;
+  --irysup-radius-sm: 6px;
+  --irysup-radius-md: 8px;
+  --irysup-radius-lg: 12px;
+  --irysup-radius-xl: 16px;
+  --irysup-radius-full: 50%;
+
+  --irysup-avatar-size: 36px;
+  --irysup-avatar-size-sm: 28px;
+  --irysup-button-height: 36px;
+  --irysup-input-height: 38px;
+
+  --irysup-breakpoint-mobile: 640px;
+  --irysup-breakpoint-tablet: 768px;
+  --irysup-breakpoint-desktop: 1024px;
+
+  --irysup-transition-fast: 0.15s ease;
+  --irysup-transition-normal: 0.2s ease;
+  --irysup-transition-slow: 0.3s ease;
+}

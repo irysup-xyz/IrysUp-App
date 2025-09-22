@@ -1,0 +1,21 @@
+.layout-container {
+    display: flex;
+    min-height: 100vh;
+    background: var(--irysup-color-bg);
+    color: var(--irysup-color-text);
+    font-family: var(--irysup-font-family);
+}
+
+.layout-sidebar {
+    flex: 0 0 280px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.layout-main {
+    flex: 1;
+    padding: var(--irysup-spacing-xl);
+    overflow-y: auto;
+    background: var(--irysup-color-bg);
+}

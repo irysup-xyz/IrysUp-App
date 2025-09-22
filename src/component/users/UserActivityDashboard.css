@@ -1,0 +1,211 @@
+.irysup-summary-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--irysup-color-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.irysup-summary-header {
+    background: var(--irysup-color-card);
+    border: 1px solid var(--irysup-color-border);
+    border-radius: var(--irysup-radius-sm);
+    padding: 1.75rem 2rem;
+    box-shadow: var(--irysup-shadow-sm);
+    transition: box-shadow 0.2s ease;
+}
+
+.irysup-summary-header:hover {
+    box-shadow: var(--irysup-shadow-md);
+}
+
+.irysup-heading {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    letter-spacing: -0.02em;
+}
+
+.irysup-subtitle {
+    font-size: 0.95rem;
+    color: var(--irysup-color-text-secondary);
+    margin: 0;
+    font-weight: 400;
+}
+
+.irysup-summary-table-wrapper {
+    background: var(--irysup-color-card);
+    border: 1px solid var(--irysup-color-border);
+    border-radius: var(--irysup-radius-sm);
+    padding: 0;
+    box-shadow: var(--irysup-shadow-sm);
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.irysup-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.irysup-summary-table th {
+    background-color: rgba(0, 0, 0, 0.02);
+    font-weight: 600;
+    color: var(--irysup-color-text);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 2px solid var(--irysup-color-border);
+}
+
+.irysup-summary-table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid var(--irysup-color-border-light);
+    color: var(--irysup-color-text);
+    vertical-align: middle;
+}
+
+.irysup-summary-row:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.irysup-metric {
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--irysup-radius-sm);
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.irysup-metric.register {
+    background: rgba(57, 121, 244, 0.15);
+    color: var(--irysup-color-primary);
+    border: 1px solid rgba(57, 121, 244, 0.2);
+}
+
+.irysup-metric.login {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--irysup-color-success);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.irysup-metric.total {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--irysup-color-text);
+    font-weight: 700;
+    border: 1px solid var(--irysup-color-border);
+}
+
+.irysup-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background: var(--irysup-color-bg);
+    border-top: 1px solid var(--irysup-color-border);
+    border-radius: 0 0 var(--irysup-radius-sm) var(--irysup-radius-sm);
+}
+
+.irysup-pagination-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--irysup-radius-sm);
+    border: 1px solid var(--irysup-color-border);
+    background: transparent;
+    color: var(--irysup-color-text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.irysup-pagination-btn:hover:not(:disabled) {
+    background: var(--irysup-color-hover);
+    border-color: var(--irysup-color-border);
+    color: var(--irysup-color-text);
+}
+
+.irysup-pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.irysup-pagination-info {
+    font-size: 0.9rem;
+    color: var(--irysup-color-text-secondary);
+    font-weight: 500;
+}
+
+.irysup-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: var(--irysup-color-text-secondary);
+    background: var(--irysup-color-card);
+    border: 1px dashed var(--irysup-color-border);
+    border-radius: var(--irysup-radius-sm);
+    margin: 1rem 0;
+}
+
+.irysup-empty-state > div {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.irysup-empty-state p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--irysup-color-text);
+}
+
+.irysup-error-box {
+    padding: 1.25rem 1.5rem;
+    background: rgba(239, 68, 68, 0.08);
+    border-left: 4px solid var(--irysup-color-error);
+    color: var(--irysup-color-error);
+    border-radius: var(--irysup-radius-sm);
+    font-weight: 500;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.irysup-skeleton-table {
+    background: var(--irysup-color-card);
+    border: 1px solid var(--irysup-color-border);
+    border-radius: var(--irysup-radius-sm);
+    padding: 2rem;
+}
+
+.irysup-skeleton-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.irysup-skeleton-cell {
+    flex: 1;
+    height: 1.25rem;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: var(--irysup-radius-sm);
+}

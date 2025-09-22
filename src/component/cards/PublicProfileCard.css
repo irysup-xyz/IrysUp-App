@@ -1,0 +1,110 @@
+.profile-card {
+    background: var(--irysup-color-bg);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card.error {
+    color: var(--irysup-color-danger);
+    text-align: center;
+    padding: 40px;
+}
+
+.profile-card.not-found {
+    color: var(--irysup-color-text-muted);
+    text-align: center;
+    padding: 40px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.profile-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--irysup-color-text);
+    margin: 0;
+}
+
+.profile-avatar {
+    text-align: center;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.avatar-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--irysup-color-gray);
+}
+
+.avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--irysup-color-gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--irysup-color-bg);
+    font-weight: 600;
+    font-size: 24px;
+    border: 3px solid var(--irysup-color-gray);
+}
+
+.profile-info {
+    margin-bottom: 24px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--irysup-color-text-secondary);
+    min-width: 100px;
+    font-size: 14px;
+}
+
+.info-value {
+    flex: 1;
+    color: var(--irysup-color-text);
+    font-size: 15px;
+}
+
+.divider-line {
+    border-top: 1px solid var(--irysup-color-nav-bg);
+    margin: 24px 0;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--irysup-color-primary);
+    margin: 24px 0 12px;
+}
+
+.wallet-section,
+.social-section {
+    margin-bottom: 24px;
+}
+
+.public-profile .info-item {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--irysup-color-gray);
+}
+
+.public-profile .info-item:last-child {
+    border-bottom: none;
+}

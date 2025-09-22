@@ -1,0 +1,15 @@
+.dashboard-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); */
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    background-color: var(--irysup-color-bg);
+}
+
+.dashboard-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bean-light);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bean-light);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bean-light) transparent;
+}

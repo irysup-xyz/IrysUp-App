@@ -1,0 +1,76 @@
+.login-reminder-overlay {
+    position: fixed;
+    top: var(--irysup-spacing-md);
+    right: var(--irysup-spacing-md);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.login-reminder-card {
+    background: var(--irysup-color-bg);
+    border: 2px solid var(--irysup-color-border);
+    border-radius: var(--irysup-radius-lg);
+    padding: var(--irysup-spacing-md) var(--irysup-spacing-lg);
+    width: 500px;
+    pointer-events: auto;
+    position: relative;
+    animation: slideIn 0.3s ease-out;
+    font-family: var(--irysup-font-family);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.login-reminder-card p {
+    margin: 0 0 var(--irysup-spacing-sm) 0;
+    font-weight: var(--irysup-font-weight-medium);
+    color: var(--irysup-color-text);
+    font-size: var(--irysup-font-size-sm);
+}
+
+.login-reminder-btn {
+    background: var(--irysup-color-primary);
+    color: var(--irysup-color-bg);
+    border: none;
+    padding: var(--irysup-spacing-xs) var(--irysup-spacing-md);
+    border-radius: var(--irysup-radius-sm);
+    cursor: pointer;
+    font-weight: var(--irysup-font-weight-semibold);
+    font-size: var(--irysup-font-size-sm);
+    font-family: var(--irysup-font-family);
+}
+
+.login-reminder-btn:hover {
+    background: var(--irysup-color-primary-hover);
+}
+
+.close-reminder-btn {
+    position: absolute;
+    top: var(--irysup-spacing-xs);
+    right: var(--irysup-spacing-xs);
+    background: none;
+    border: none;
+    font-size: var(--irysup-font-size-sm);
+    cursor: pointer;
+    color: var(--irysup-color-text-muted);
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--irysup-radius-full);
+    font-family: var(--irysup-font-family);
+}
+
+.close-reminder-btn:hover {
+    color: var(--irysup-color-text);
+}

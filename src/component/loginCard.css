@@ -1,0 +1,333 @@
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.login-card-left {
+    flex: 1;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.login-card-right {
+    flex: 1;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    border-left: 1px solid #eee;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.welcome-section img {
+    width: 80px;
+    height: auto;
+    max-width: 120px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.welcome-section img:hover {
+    transform: scale(1.05);
+}
+
+.welcome-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin: 0;
+}
+
+.welcome-subtitle {
+    font-size: 1.125rem;
+    color: #555;
+    margin-top: 0.25rem;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 90%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.regis-btn,
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.regis-btn:hover,
+.login-btn:hover {
+    background: #f0f0f0;
+    border-color: #ccc;
+}
+
+.regis-btn {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.regis-btn:hover {
+    background: #111;
+}
+
+.default-message {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000;
+    letter-spacing: -0.02em;
+}
+
+.back-btn {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    margin: -0.5rem 0 1.5rem 0;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #000;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.2s ease;
+    appearance: none;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    padding-right: 3.5rem;
+}
+
+.password-wrapper button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #777;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.password-wrapper button:hover {
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+.password-wrapper button:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #111;
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.input-error {
+    border-color: #e74c3c !important;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2) !important;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-error {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    20%, 80% {
+        transform: translateX(2px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-card-left {
+        height: 200px;
+    }
+
+    .login-card-right {
+        padding: 2rem;
+        border-left: none;
+        border-top: 1px solid #eee;
+    }
+
+    .welcome-section img {
+        width: 70px;
+    }
+
+    .welcome-title {
+        font-size: 1.75rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1rem;
+    }
+
+    .password-wrapper input {
+        padding-right: 3rem;
+    }
+
+    .password-wrapper button {
+        right: 10px;
+        font-size: 1rem;
+    }
+
+    .form-container h3 {
+        font-size: 1.25rem;
+    }
+}

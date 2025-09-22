@@ -1,0 +1,114 @@
+.social-footer {
+    background-color: var(--irysup-color-nav-bg);
+    border-top: 1px solid var(--irysup-color-border);
+    padding: 1.5rem 1.5rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.footer-title {
+    font-size: var(--irysup-font-size-xs);
+    font-weight: var(--irysup-font-weight-semibold);
+    color: var(--irysup-color-text);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.1px;
+}
+
+.footer-about .footer-text,
+.footer-thanks-text {
+    font-size: var(--irysup-font-size-xs);
+    color: var(--irysup-color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-links .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    color: var(--irysup-color-text-secondary);
+    text-decoration: none;
+    font-size: var(--irysup-font-size-xs);
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--irysup-color-primary);
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--irysup-radius-full);
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--irysup-color-text-secondary);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--irysup-color-primary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--irysup-color-border);
+    text-align: center;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: var(--irysup-font-size-xs);
+    color: var(--irysup-color-text-muted);
+}
+
+.footer-copyright-text {
+    font-weight: var(--irysup-font-weight-medium);
+}
+
+.footer-separator {
+    color: var(--irysup-color-border);
+}
+
+.footer-link {
+    color: var(--irysup-color-text-muted);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--irysup-color-primary);
+    text-decoration: underline;
+}

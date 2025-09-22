@@ -1,0 +1,67 @@
+/* src/component/Maintenance.css */
+
+.maintenance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 64px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.maintenance-title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin: 0 0 16px;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.maintenance-subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.maintenance-code-block {
+    font-family: 'SF Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 16px;
+    background-color: #111;
+    color: #fbbf24;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin: 24px 0;
+    text-align: left;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.maintenance-refresh-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.maintenance-refresh-link:hover {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.maintenance-refresh-link:focus {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}

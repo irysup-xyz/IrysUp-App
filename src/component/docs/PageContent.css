@@ -1,0 +1,82 @@
+.page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--irysup-spacing-xl) 0;
+    color: var(--irysup-color-text);
+    line-height: 1.7;
+    font-family: var(--irysup-font-family);
+}
+
+.page-content h1 {
+    font-size: var(--irysup-font-size-2xl);
+    font-weight: var(--irysup-font-weight-bold);
+    margin-bottom: var(--irysup-spacing-lg);
+    color: var(--irysup-color-primary);
+}
+
+.page-content h2 {
+    font-size: var(--irysup-font-size-xl);
+    font-weight: var(--irysup-font-weight-semibold);
+    margin: var(--irysup-spacing-xl) 0 var(--irysup-spacing-md);
+    padding-bottom: var(--irysup-spacing-xs);
+    border-bottom: 1px solid var(--irysup-color-border);
+}
+
+.page-content h3 {
+    font-size: var(--irysup-font-size-lg);
+    font-weight: var(--irysup-font-weight-medium);
+    margin: var(--irysup-spacing-lg) 0 var(--irysup-spacing-sm);
+}
+
+.page-content p {
+    font-size: var(--irysup-font-size-base);
+    margin-bottom: var(--irysup-spacing-md);
+    color: var(--irysup-color-text-secondary);
+}
+
+.page-content ul,
+.page-content ol {
+    margin: var(--irysup-spacing-md) 0 var(--irysup-spacing-md) var(--irysup-spacing-lg);
+    padding-left: var(--irysup-spacing-lg);
+}
+
+.page-content ul li,
+.page-content ol li {
+    margin-bottom: var(--irysup-spacing-xs);
+    color: var(--irysup-color-text-secondary);
+}
+
+.page-content a {
+    color: var(--irysup-color-primary);
+    text-decoration: none;
+    font-weight: var(--irysup-font-weight-medium);
+}
+
+.page-content a:hover {
+    text-decoration: underline;
+}
+
+.page-content blockquote {
+    background: var(--irysup-color-gray-light);
+    border-left: 4px solid var(--irysup-color-primary);
+    padding: var(--irysup-spacing-md);
+    margin: var(--irysup-spacing-lg) 0;
+    font-style: italic;
+    color: var(--irysup-color-text-secondary);
+}
+
+.page-content .highlight-box {
+    background: var(--irysup-color-gray-light);
+    border: 1px solid var(--irysup-color-border);
+    border-radius: var(--irysup-radius-md);
+    padding: var(--irysup-spacing-lg);
+    margin: var(--irysup-spacing-xl) 0;
+    max-width: 900px;
+}
+
+.page-content .highlight-box h4 {
+    margin: 0 0 var(--irysup-spacing-sm);
+    font-size: var(--irysup-font-size-md);
+    font-weight: var(--irysup-font-weight-semibold);
+    color: var(--irysup-color-primary);
+}
