@@ -1,9 +1,3 @@
-
----
-
-### ✅ `irysup-app/README.md`
-
-```markdown
 # IrysUp App — Frontend Application
 
 The web-based frontend for IrysUp, built with React and Tailwind CSS. This application enables creators and users to interact with the decentralized asset ecosystem — uploading, browsing, downloading, and storing creative content on the Irys DataChain.
